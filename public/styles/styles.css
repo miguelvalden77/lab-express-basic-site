@@ -1,0 +1,53 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 200vh;
+    overflow-x: hidden;
+}
+
+a{
+    display: block;
+    text-decoration: none;
+}
+
+nav{
+    width: 100%;
+    background-color: burlywood;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+img{
+    display: block;
+}
+
+.img-container{
+    display: block;
+    flex: 1;
+    padding: 1rem;
+}
+
+.img-container:hover{
+    transform: scale(1.25);
+    z-index: 10;
+    transition: transform 0.5s;
+    transform: rotate(360deg);
+}
+
+
+.gallery{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.sticky{
+    position: sticky;
+    top: 30rem;
+    height: 5rem;
+}
+
